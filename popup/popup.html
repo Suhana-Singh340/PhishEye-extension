@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PhishEye Dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="dashboard">
+    <header>
+  <h1>
+    <img src="C:\Users\80816\Desktop\PhishEye-extension\icons\icon16-alert.png" alt="Shield icon" class="icon" />
+    PhishEye
+  </h1>
+  <p class="subtitle">Real-time phishing protection</p>
+</header>
+
+
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-value" id="totalScans">0</div>
+        <div class="stat-label">URLs Scanned</div>
+      </div>
+      <div class="stat-card danger">
+        <div class="stat-value" id="threatsFound">0</div>
+        <div class="stat-label">Threats Blocked</div>
+      </div>
+    </div>
+
+    <div class="chart-container">
+      <canvas id="metricsChart"></canvas>
+    </div>
+
+    <div class="footer">
+      <button id="viewDetails">View Detection Log</button>
+    </div>
+  </div>
+
+  <script src="chart.js" type="module"></script>
+  <script src="popup.js" type="module"></script>
+</body>
+</html>

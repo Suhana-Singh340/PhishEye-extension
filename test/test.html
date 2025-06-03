@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PhishEye Accuracy Tests</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    .test-case { padding: 10px; margin: 5px; border-radius: 5px; }
+    .safe { background-color: #e6f7e6; border: 1px solid #2ecc71; }
+    .phishing { background-color: #ffebee; border: 1px solid #e74c3c; }
+    .correct { border-left: 5px solid #2ecc71; }
+    .incorrect { border-left: 5px solid #e74c3c; }
+    #metrics { margin-top: 20px; padding: 15px; background: #f5f5f5; }
+  </style>
+</head>
+<body>
+  <h1>PhishEye Accuracy Tests</h1>
+  <button id="runTests">Run All Tests</button>
+  <div id="testResults"></div>
+  <div id="metrics"></div>
+
+  <script src="test.js"></script>
+</body>
+</html>

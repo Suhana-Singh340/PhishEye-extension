@@ -1,0 +1,50 @@
+{
+  "manifest_version": 3,
+  "name": "PhishEye",
+  "version": "1.0",
+  "description": "Real-time phishing URL detector",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "128": "icons/icon128.png", 
+      "48": "icons/icon48.png"
+    }
+  },
+  "permissions": [
+    "storage",
+    "tabs",
+    "webNavigation",
+    "alarms",
+    "notifications"
+  ],
+  "host_permissions": [
+    "https://safebrowsing.googleapis.com/*",
+    "<all_urls>"
+  ],
+  "web_accessible_resources": [{
+    "resources": [
+    "warning/warning.html",
+    "warning/warning.css",
+    "warning/warning.js",
+    "icons/icon16-alert.png",
+    "icons/icon32-alert.png",
+    "icons/icon48-alert.png",
+    "icons/icon128-alert.png"
+  ],
+    "matches": ["<all_urls>"]
+  }],
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["content.js"],
+    "run_at": "document_start"
+  }]
+}

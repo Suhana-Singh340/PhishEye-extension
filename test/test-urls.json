@@ -1,0 +1,2478 @@
+{
+  "tests": [
+    {
+      "url": "https://www.google.com",
+      "expected": "safe",
+      "description": "Legitimate Google domain"
+    },
+    {
+      "url": "https://www.paypal.com",
+      "expected": "safe",
+      "description": "Legitimate PayPal domain"
+    },
+    {
+      "url": "https://paypa1-login.com",
+      "expected": "phishing",
+      "description": "Obvious PayPal phishing (character substitution)"
+    },
+    {
+      "url": "https://appleid-verify.com",
+      "expected": "phishing",
+      "description": "Apple ID phishing attempt"
+    },
+    {
+      "url": "https://account.google.com.security-update.org",
+      "expected": "phishing",
+      "description": "Suspicious subdomain structure"
+    },
+    {
+      "url": "https://www.amazon.com",
+      "expected": "safe",
+      "description": "Legitimate Amazon domain"
+    },
+    {
+      "url": "https://amaz0n-payments.com",
+      "expected": "phishing",
+      "description": "Amazon phishing (zero substitution)"
+    },
+    {
+      "url": "https://facebook-login.tk",
+      "expected": "phishing",
+      "description": "Facebook phishing with suspicious TLD"
+    },
+    {
+      "url": "https://netflix.account-update.com",
+      "expected": "phishing",
+      "description": "Brand in subdomain phishing"
+    },
+    {
+      "url": "https://microsoft-support.gq",
+      "expected": "phishing",
+      "description": "Microsoft phishing with high-risk TLD"
+    },
+    {
+      "url": "https://www.xn--ggle-55da.com",
+      "expected": "phishing",
+      "description": "Google IDN homograph attack"
+    },
+    {
+      "url": "https://ebay-secure-login.cc",
+      "expected": "phishing",
+      "description": "eBay phishing with suspicious TLD"
+    },
+    {
+      "url": "https://www.apple.com",
+      "expected": "safe",
+      "description": "Legitimate Apple domain"
+    },
+    {
+      "url": "https://app1e-account.com",
+      "expected": "phishing",
+      "description": "Apple phishing (character substitution)"
+    },
+    {
+      "url": "https://security.facebook.com",
+      "expected": "safe",
+      "description": "Legitimate Facebook subdomain"
+    },
+    {
+      "url": "https://faceb00k-login.info",
+      "expected": "phishing",
+      "description": "Facebook phishing (zero substitution)"
+    },
+    {
+      "url": "https://www.microsoft.com",
+      "expected": "safe",
+      "description": "Legitimate Microsoft domain"
+    },
+    {
+      "url": "https://micr0soft-update.com",
+      "expected": "phishing",
+      "description": "Microsoft phishing (zero substitution)"
+    },
+    {
+      "url": "https://login.live.com",
+      "expected": "safe",
+      "description": "Legitimate Microsoft login"
+    },
+    {
+      "url": "https://update-paypal.xyz",
+      "expected": "phishing",
+      "description": "PayPal phishing with suspicious TLD"
+    },
+    {
+      "url": "https://linkedin-secure.work",
+      "expected": "phishing",
+      "description": "LinkedIn phishing with suspicious TLD"
+    },
+    {
+      "url": "https://www.linkedin.com",
+      "expected": "safe",
+      "description": "Legitimate LinkedIn domain"
+    },
+    {
+      "url": "https://chase-bank.secure-login.top",
+      "expected": "phishing",
+      "description": "Chase Bank phishing with multiple suspicious elements"
+    },
+    {
+      "url": "https://www.chase.com",
+      "expected": "safe",
+      "description": "Legitimate Chase domain"
+    },
+    {
+      "url": "https://wellsfargo-online.biz",
+      "expected": "phishing",
+      "description": "Wells Fargo phishing attempt"
+    },
+    {
+      "url": "https://www.wellsfargo.com",
+      "expected": "safe",
+      "description": "Legitimate Wells Fargo domain"
+    },
+    {
+      "url": "https://twitter-verify.pro",
+      "expected": "phishing",
+      "description": "Twitter phishing with suspicious TLD"
+    },
+    {
+      "url": "https://twitter.com",
+      "expected": "safe",
+      "description": "Legitimate Twitter domain"
+    },
+    {
+      "url": "https://whatsapp-web.xyz",
+      "expected": "phishing",
+      "description": "WhatsApp phishing attempt"
+    },
+    {
+      "url": "https://web.whatsapp.com",
+      "expected": "safe",
+      "description": "Legitimate WhatsApp web client"
+    },
+    {
+      "url": "https://icloud-restore.tech",
+      "expected": "phishing",
+      "description": "iCloud phishing with tech TLD"
+    },
+    {
+      "url": "https://www.icloud.com",
+      "expected": "safe",
+      "description": "Legitimate iCloud domain"
+    },
+    {
+      "url": "https://steamcommunity.ru",
+      "expected": "phishing",
+      "description": "Steam phishing with country TLD"
+    },
+    {
+      "url": "https://steamcommunity.com",
+      "expected": "safe",
+      "description": "Legitimate Steam domain"
+    },
+    {
+      "url": "https://discord-gift.site",
+      "expected": "phishing",
+      "description": "Discord gift scam attempt"
+    },
+    {
+      "url": "https://discord.com",
+      "expected": "safe",
+      "description": "Legitimate Discord domain"
+    },
+    {
+      "url": "https://adobe-update.download",
+      "expected": "phishing",
+      "description": "Adobe phishing with download TLD"
+    },
+    {
+      "url": "https://www.adobe.com",
+      "expected": "safe",
+      "description": "Legitimate Adobe domain"
+    },
+    {
+      "url": "https://dropbox-file-share.space",
+      "expected": "phishing",
+      "description": "Dropbox phishing attempt"
+    },
+    {
+      "url": "https://www.dropbox.com",
+      "expected": "safe",
+      "description": "Legitimate Dropbox domain"
+    },
+    {
+      "url": "https://spotify-premium.gratis",
+      "expected": "phishing",
+      "description": "Spotify premium scam"
+    },
+    {
+      "url": "https://www.spotify.com",
+      "expected": "safe",
+      "description": "Legitimate Spotify domain"
+    },
+    {
+      "url": "https://bankofamerica-online.secure",
+      "expected": "phishing",
+      "description": "Bank of America phishing with fake secure TLD"
+    },
+    {
+      "url": "https://www.bankofamerica.com",
+      "expected": "safe",
+      "description": "Legitimate Bank of America domain"
+    },
+    {
+      "url": "https://visa-payment-verify.com",
+      "expected": "phishing",
+      "description": "Visa brand impersonation with verification keywords"
+    },
+    {
+      "url": "https://myaccount.visa.com",
+      "expected": "safe",
+      "description": "Legitimate Visa domain"
+    },
+    {
+      "url": "https://americanexpress-securelogin.com",
+      "expected": "phishing",
+      "description": "Amex phishing with fake secure subdomain"
+    },
+    {
+      "url": "https://www.americanexpress.com",
+      "expected": "safe",
+      "description": "Legitimate American Express domain"
+    },
+    {
+      "url": "https://outlook-mail-reset.xyz",
+      "expected": "phishing",
+      "description": "Outlook password reset scam"
+    },
+    {
+      "url": "https://outlook.live.com",
+      "expected": "safe",
+      "description": "Legitimate Outlook domain"
+    },
+    {
+      "url": "https://zoom-us-signin.com",
+      "expected": "phishing",
+      "description": "Zoom phishing with regional reference"
+    },
+    {
+      "url": "https://zoom.us",
+      "expected": "safe",
+      "description": "Legitimate Zoom domain"
+    },
+    {
+      "url": "https://slack-workspace-login.cc",
+      "expected": "phishing",
+      "description": "Slack workspace phishing"
+    },
+    {
+      "url": "https://slack.com",
+      "expected": "safe",
+      "description": "Legitimate Slack domain"
+    },
+    {
+      "url": "https://coinbase-pro-login.com",
+      "expected": "phishing",
+      "description": "Coinbase Pro phishing"
+    },
+    {
+      "url": "https://pro.coinbase.com",
+      "expected": "safe",
+      "description": "Legitimate Coinbase Pro domain"
+    },
+    {
+      "url": "https://binance-kyc-verification.com",
+      "expected": "phishing",
+      "description": "Binance KYC verification scam"
+    },
+    {
+      "url": "https://www.binance.com",
+      "expected": "safe",
+      "description": "Legitimate Binance domain"
+    },
+    {
+      "url": "https://trustwallet-backup.com",
+      "expected": "phishing",
+      "description": "Trust Wallet backup scam"
+    },
+    {
+      "url": "https://trustwallet.com",
+      "expected": "safe",
+      "description": "Legitimate Trust Wallet domain"
+    },
+    {
+      "url": "https://metamask-recovery.xyz",
+      "expected": "phishing",
+      "description": "MetaMask recovery phrase phishing"
+    },
+    {
+      "url": "https://metamask.io",
+      "expected": "safe",
+      "description": "Legitimate MetaMask domain"
+    },
+    {
+      "url": "https://trezor-wallet-update.com",
+      "expected": "phishing",
+      "description": "Trezor wallet update scam"
+    },
+    {
+      "url": "https://trezor.io",
+      "expected": "safe",
+      "description": "Legitimate Trezor domain"
+    },
+    {
+      "url": "https://ledger-live-update.net",
+      "expected": "phishing",
+      "description": "Ledger Live update phishing"
+    },
+    {
+      "url": "https://www.ledger.com",
+      "expected": "safe",
+      "description": "Legitimate Ledger domain"
+    },
+    {
+      "url": "https://github-password-reset.com",
+      "expected": "phishing",
+      "description": "GitHub password reset scam"
+    },
+    {
+      "url": "https://github.com",
+      "expected": "safe",
+      "description": "Legitimate GitHub domain"
+    },
+    {
+      "url": "https://gitlab-2fa-reset.xyz",
+      "expected": "phishing",
+      "description": "GitLab 2FA reset scam"
+    },
+    {
+      "url": "https://gitlab.com",
+      "expected": "safe",
+      "description": "Legitimate GitLab domain"
+    },
+    {
+      "url": "https://bitbucket-password-reset.com",
+      "expected": "phishing",
+      "description": "Bitbucket password reset scam"
+    },
+    {
+      "url": "https://bitbucket.org",
+      "expected": "safe",
+      "description": "Legitimate Bitbucket domain"
+    },
+    {
+      "url": "https://atlassian-account-verify.com",
+      "expected": "phishing",
+      "description": "Atlassian account verification scam"
+    },
+    {
+      "url": "https://www.atlassian.com",
+      "expected": "safe",
+      "description": "Legitimate Atlassian domain"
+    },
+    {
+      "url": "https://jira-account-update.com",
+      "expected": "phishing",
+      "description": "Jira account update scam"
+    },
+    {
+      "url": "https://jira.atlassian.com",
+      "expected": "safe",
+      "description": "Legitimate Jira domain"
+    },
+    {
+      "url": "https://confluence-login-update.com",
+      "expected": "phishing",
+      "description": "Confluence login update scam"
+    },
+    {
+      "url": "https://confluence.atlassian.com",
+      "expected": "safe",
+      "description": "Legitimate Confluence domain"
+    },{
+      "url": "https://support-appleid.com",
+      "expected": "phishing",
+      "description": "Apple Support phishing (reversed domain structure)"
+    },
+    {
+      "url": "https://appleid.apple.com",
+      "expected": "safe",
+      "description": "Legitimate Apple ID portal"
+    },
+    {
+      "url": "https://microsoft-office365.com",
+      "expected": "phishing",
+      "description": "Office 365 brandjacking"
+    },
+    {
+      "url": "https://www.office.com",
+      "expected": "safe",
+      "description": "Legitimate Office portal"
+    },
+    {
+      "url": "https://amazon-prime-renewal.com",
+      "expected": "phishing",
+      "description": "Prime subscription scam"
+    },
+    {
+      "url": "https://www.amazon.com/prime",
+      "expected": "safe",
+      "description": "Legitimate Prime portal"
+    },
+    {
+      "url": "https://netflix-payment-update.com",
+      "expected": "phishing",
+      "description": "Payment update scam"
+    },
+    {
+      "url": "https://www.netflix.com/youraccount",
+      "expected": "safe",
+      "description": "Legitimate account page"
+    },
+    {
+      "url": "https://disneyplus-billing.com",
+      "expected": "phishing",
+      "description": "Streaming service billing scam"
+    },
+    {
+      "url": "https://www.disneyplus.com",
+      "expected": "safe",
+      "description": "Legitimate Disney+ domain"
+    },
+    {
+      "url": "https://hbo-max-login.com",
+      "expected": "phishing",
+      "description": "Fake HBO Max portal"
+    },
+    {
+      "url": "https://play.max.com",
+      "expected": "safe",
+      "description": "Legitimate Max domain"
+    },
+    {
+      "url": "https://spotify-premium.club",
+      "expected": "phishing",
+      "description": "Fake premium offer"
+    },
+    {
+      "url": "https://www.spotify.com/premium",
+      "expected": "safe",
+      "description": "Legitimate premium page"
+    },
+    {
+      "url": "https://twitter-blue.verify.com",
+      "expected": "phishing",
+      "description": "Fake verification service"
+    },
+    {
+      "url": "https://twitter.com/i/verified",
+      "expected": "safe",
+      "description": "Legitimate verification info"
+    },
+    {
+      "url": "https://instagram-help.com",
+      "expected": "phishing",
+      "description": "Fake support portal"
+    },
+    {
+      "url": "https://help.instagram.com",
+      "expected": "safe",
+      "description": "Legitimate help center"
+    },
+    {
+      "url": "https://tiktok-creators.pw",
+      "expected": "phishing",
+      "description": "Creator account scam"
+    },
+    {
+      "url": "https://www.tiktok.com/creators",
+      "expected": "safe",
+      "description": "Legitimate creator portal"
+    },
+    {
+      "url": "https://airbnb-refund.com",
+      "expected": "phishing",
+      "description": "Fake refund portal"
+    },
+    {
+      "url": "https://www.airbnb.com/help",
+      "expected": "safe",
+      "description": "Legitimate help center"
+    },
+    {
+      "url": "https://uber-eats.delivery",
+      "expected": "phishing",
+      "description": "Food delivery scam"
+    },
+    {
+      "url": "https://www.ubereats.com",
+      "expected": "safe",
+      "description": "Legitimate Uber Eats"
+    },
+    {
+      "url": "https://doordash-courier.com",
+      "expected": "phishing",
+      "description": "Driver account scam"
+    },
+    {
+      "url": "https://www.doordash.com/dasher",
+      "expected": "safe",
+      "description": "Legitimate Dasher portal"
+    },
+    {
+      "url": "https://grubhub-drivers.com",
+      "expected": "phishing",
+      "description": "Driver phishing"
+    },
+    {
+      "url": "https://driver.grubhub.com",
+      "expected": "safe",
+      "description": "Legitimate driver portal"
+    },
+    {
+      "url": "https://usps-tracking.info",
+      "expected": "phishing",
+      "description": "Package tracking scam"
+    },
+    {
+      "url": "https://tools.usps.com",
+      "expected": "safe",
+      "description": "Legitimate USPS tools"
+    },
+    {
+      "url": "https://fedex-tracking.delivery",
+      "expected": "phishing",
+      "description": "Shipping notification scam"
+    },
+    {
+      "url": "https://www.fedex.com/tracking",
+      "expected": "safe",
+      "description": "Legitimate tracking"
+    },
+    {
+      "url": "https://dhl-express.shipment",
+      "expected": "phishing",
+      "description": "Express delivery scam"
+    },
+    {
+      "url": "https://www.dhl.com",
+      "expected": "safe",
+      "description": "Legitimate DHL domain"
+    },
+    {
+      "url": "https://ups-package-alert.com",
+      "expected": "phishing",
+      "description": "Package alert scam"
+    },
+    {
+      "url": "https://www.ups.com/track",
+      "expected": "safe",
+      "description": "Legitimate tracking"
+    },
+    {
+      "url": "https://irs-tax-refund.com",
+      "expected": "phishing",
+      "description": "Tax refund scam"
+    },
+    {
+      "url": "https://www.irs.gov/refunds",
+      "expected": "safe",
+      "description": "Legitimate IRS portal"
+    },
+    {
+      "url": "https://social-security-update.com",
+      "expected": "phishing",
+      "description": "SSA impersonation"
+    },
+    {
+      "url": "https://www.ssa.gov",
+      "expected": "safe",
+      "description": "Legitimate SSA domain"
+    },
+    {
+      "url": "https://medicare-enrollment.com",
+      "expected": "phishing",
+      "description": "Healthcare scam"
+    },
+    {
+      "url": "https://www.medicare.gov",
+      "expected": "safe",
+      "description": "Legitimate Medicare"
+    },
+    {
+      "url": "https://covid-vaccine-record.com",
+      "expected": "phishing",
+      "description": "Health credential scam"
+    },
+    {
+      "url": "https://www.cdc.gov/vaccines",
+      "expected": "safe",
+      "description": "Legitimate vaccine info"
+    },
+    {
+      "url": "https://us-visa-application.com",
+      "expected": "phishing",
+      "description": "Immigration scam"
+    },
+    {
+      "url": "https://travel.state.gov",
+      "expected": "safe",
+      "description": "Legitimate visa info"
+    },
+    {
+      "url": "https://passport-renewal-online.com",
+      "expected": "phishing",
+      "description": "Document service scam"
+    },
+    {
+      "url": "https://www.southbankmosaics.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.uni-mainz.de",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.voicefmradio.co.uk",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.sfnmjournal.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.rewildingargentina.org",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.globalreporting.org",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.saffronart.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.nerdscandy.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.hyderabadonline.in",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.aap.org",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.religionenlibertad.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "http://www.teramill.com",
+      "expected": "phishing",
+      "description": "Suspicious domain"
+    },
+    {
+      "url": "https://www.socialpolicy.org",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.aoh61.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.bulgariaski.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.brightika.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.motley.ie",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.funzine.hu",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.dixxon.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.ooty.ind.in",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "http://www.f0519141.xsph.ru",
+      "expected": "phishing",
+      "description": "Suspicious domain"
+    },
+    {
+      "url": "http://www.shprakserf.gq",
+      "expected": "phishing",
+      "description": "Suspicious domain"
+    },
+    {
+      "url": "https://www.cryptocompare.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.diariodealmeria.es",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.town.minamichita.lg.jp",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.bwresearch.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.musicvideoproduction.guru",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://service-mitld.firebaseapp.com/",
+      "expected": "phishing",
+      "description": "Suspicious domain"
+    },
+    {
+      "url": "http://www.kuradox92.lima-city.de",
+      "expected": "phishing",
+      "description": "Suspicious domain"
+    },
+    {
+      "url": "https://liuy-9a930.web.app/",
+      "expected": "phishing",
+      "description": "Suspicious domain"
+    },
+    {
+      "url": "https://www.landed.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://ipfs.io/ipfs/qmrvvyr84esa2assw9vvwupqjgsdn4c3dwkusfdwzdz3kn?clientid=noc@protocol.ai",
+      "expected": "phishing",
+      "description": "Suspicious domain"
+    },
+    {
+      "url": "http://att-103731-107123.weeblysite.com/",
+      "expected": "phishing",
+      "description": "Suspicious domain"
+    },
+    {
+      "url": "https://www.bikeseoul.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://hidok4f8zl.firebaseapp.com/",
+      "expected": "phishing",
+      "description": "Suspicious domain"
+    },
+    {
+      "url": "https://www.ibeani.co.uk",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.metroretrovintage.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "http://www.ooguy.com",
+      "expected": "phishing",
+      "description": "Suspicious domain"
+    },
+    {
+      "url": "https://www.vysor.io",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "http://www.fairytalesinc.com",
+      "expected": "phishing",
+      "description": "Suspicious domain"
+    },
+    {
+      "url": "http://www.iuhjn.pplink.club",
+      "expected": "phishing",
+      "description": "Suspicious domain"
+    },
+    {
+      "url": "https://mechinchem-5cb8a.web.app/",
+      "expected": "phishing",
+      "description": "Suspicious domain"
+    },
+    {
+      "url": "https://www.salutlive.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.recettessimples.fr",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://fb-restriction-case-97be5.web.app/",
+      "expected": "phishing",
+      "description": "Suspicious domain"
+    },
+    {
+      "url": "https://pontosapontamentolu.com/gclid/=/c/?gclid=ishecabh95cvbhb1eiwagy6m4vn7url3tlj5m_nu__lcyj4n06pqquydbh-56148buwwbmv7k1qejboci-isjw5_kiq",
+      "expected": "phishing",
+      "description": "Suspicious domain"
+    },
+    {
+      "url": "https://www.ainewsletter.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.marrugeku.com.au",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.sweatdrop.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "http://www.komaru.today",
+      "expected": "phishing",
+      "description": "Suspicious domain"
+    },
+    {
+      "url": "https://dev-634536.pantheonsite.io/",
+      "expected": "phishing",
+      "description": "Suspicious domain"
+    },
+    {
+      "url": "https://www.senacases.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://sabadonoappmagazine.com/",
+      "expected": "phishing",
+      "description": "Suspicious domain"
+    },
+    {
+      "url": "https://www.vespatales.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "http://www.nextraload.com",
+      "expected": "phishing",
+      "description": "Suspicious domain"
+    },
+    {
+      "url": "https://www.klerk.ru",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.karenmillen.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://topaka.cloud/ob52gtplj/18snwp",
+      "expected": "phishing",
+      "description": "Suspicious domain"
+    },
+    {
+      "url": "https://www.mlpack.org",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://metafb-tvz6efk.web.app/",
+      "expected": "phishing",
+      "description": "Suspicious domain"
+    },
+    {
+      "url": "http://www.hesselawchambers.com",
+      "expected": "phishing",
+      "description": "Suspicious domain"
+    },
+    {
+      "url": "https://www.schmitzfotografia.com.br",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.lanereport.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.spg.pt",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.coraevans.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.torahmates.org",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.larepublica.co",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.pimpim.lt",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "http://www.httpzen.fairhash.org",
+      "expected": "phishing",
+      "description": "Suspicious domain"
+    },
+    {
+      "url": "http://www.cjplogger.com",
+      "expected": "phishing",
+      "description": "Suspicious domain"
+    },
+    {
+      "url": "https://www.radware.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "http://www.erlegen.de",
+      "expected": "phishing",
+      "description": "Suspicious domain"
+    },
+    {
+      "url": "http://www.f0535398.xsph.ru",
+      "expected": "phishing",
+      "description": "Suspicious domain"
+    },
+    {
+      "url": "https://ggsexpole.web.app/",
+      "expected": "phishing",
+      "description": "Suspicious domain"
+    },
+    {
+      "url": "https://www.classfmonline.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.cornerstoneinsurance.ca",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.varzesh3.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://s3.amazonaws.com/appforest_uf/f1678949673383x832048620362898600/index%20%284%29.html",
+      "expected": "phishing",
+      "description": "Suspicious domain"
+    },
+    {
+      "url": "https://www.medicalplasticsnews.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.gitguardian.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://ormvoixregl1.firebaseapp.com/",
+      "expected": "phishing",
+      "description": "Suspicious domain"
+    },
+    {
+      "url": "https://www.crowncenter.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "http://nmve.xyz/",
+      "expected": "phishing",
+      "description": "Suspicious domain"
+    },
+    {
+      "url": "http://www.maytheday.oss-ap-southeast-2.aliyuncs.com",
+      "expected": "phishing",
+      "description": "Suspicious domain"
+    },
+    {
+      "url": "https://www.dancetheyard.org",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.olly.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.naturalearthdata.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://att-104164.weeblysite.com/",
+      "expected": "phishing",
+      "description": "Suspicious domain"
+    },
+    {
+      "url": "https://www.frdc.com.au",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.lukul.sk",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.cityparkapp.pl",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "http://tkmowpikuk.owl4fsrch.club/vnafvra97w/?q=3717065149&id=100",
+      "expected": "phishing",
+      "description": "Suspicious domain"
+    },
+    {
+      "url": "https://a04854e8-0cca-4b74-80e6-aacb14a4a5f7.id.repl.co",
+      "expected": "phishing",
+      "description": "Suspicious domain"
+    },
+    {
+      "url": "https://www.scandlines.dk",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.hskonline.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.nutritioncare.org",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.tileandstonejournal.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.c.line-design.fr",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.capeblancoheritagesociety.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.caterinaperez.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://auth-document-shared.datingg-voice.workers.dev/",
+      "expected": "phishing",
+      "description": "Suspicious domain"
+    },
+    {
+      "url": "https://mail-service-100960.weeblysite.com/",
+      "expected": "phishing",
+      "description": "Suspicious domain"
+    },
+    {
+      "url": "https://www.aqr.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "http://www.a0646498.xsph.ru",
+      "expected": "phishing",
+      "description": "Suspicious domain"
+    },
+    {
+      "url": "https://helpadcase1002405739503874569.web.app/",
+      "expected": "phishing",
+      "description": "Suspicious domain"
+    },
+    {
+      "url": "https://www.poundingtherock.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.kellerberrin.wa.gov.au",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.stadtgarten.de",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://noxioussweetconnections.carisss.repl.co/",
+      "expected": "phishing",
+      "description": "Suspicious domain"
+    },
+    {
+      "url": "http://www.jerode.ga",
+      "expected": "phishing",
+      "description": "Suspicious domain"
+    },
+    {
+      "url": "https://www.ytv.co.jp",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.today.uci.edu",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.spket.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.americanauctioneers.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://yrislfnb.qpoe.com/",
+      "expected": "phishing",
+      "description": "Suspicious domain"
+    },
+    {
+      "url": "https://www.heramission.space",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.circlek.org",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.gunsmokenet.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.bocajnarima.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.raw-health-coach.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://soah-b6mz-v.firebaseapp.com/",
+      "expected": "phishing",
+      "description": "Suspicious domain"
+    },
+    {
+      "url": "https://www.dlrect-smtb.jp.ap1.ib.commetryx.com/ibg/client/index_sp.php",
+      "expected": "phishing",
+      "description": "Suspicious domain"
+    },
+    {
+      "url": "https://www.estamos.de",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "http://www.b7a3a060b75c7dcba9c1078d4ead51f0dc.ws",
+      "expected": "phishing",
+      "description": "Suspicious domain"
+    },
+    {
+      "url": "https://www.airlinesupports.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "http://198.98.58.123/",
+      "expected": "phishing",
+      "description": "Suspicious domain"
+    },
+    {
+      "url": "https://ipfs.io/ipfs/bafybeidmmks6ka5vki6djnohox7mminfrzcjkw2mowpft7xtu2sjyxzi64/ufx!xch@",
+      "expected": "phishing",
+      "description": "Suspicious domain"
+    },
+    {
+      "url": "https://www.ackerstadtpalast.de",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.mro.nmt.edu",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "http://www.aresync.com",
+      "expected": "phishing",
+      "description": "Suspicious domain"
+    },
+    {
+      "url": "https://www.shopfiire.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.doc88.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "http://www.jab.oss-ap-southeast-1.aliyuncs.com",
+      "expected": "phishing",
+      "description": "Suspicious domain"
+    },
+    {
+      "url": "https://www.hee.nhs.uk",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.secondgeargames.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.usbirthcertificates.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.dslweb.de",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "http://www.constructiongst.com",
+      "expected": "phishing",
+      "description": "Suspicious domain"
+    },
+    {
+      "url": "http://www.westleyr.cf",
+      "expected": "phishing",
+      "description": "Suspicious domain"
+    },
+    {
+      "url": "https://www.021.rs",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.brainy.games",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.irgendwie-nerdig.de",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.peachstatearchaeologicalsociety.org",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.jazzmasters.nl",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://syk1pe9wox.firebaseapp.com/",
+      "expected": "phishing",
+      "description": "Suspicious domain"
+    },
+    {
+      "url": "https://www.londondesignbiennale.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.honneur-au-scoutisme.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "http://glaze-maple-pantry.glitch.me/link.html",
+      "expected": "phishing",
+      "description": "Suspicious domain"
+    },
+    {
+      "url": "https://www.leonardodavinci.net",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://host-authoritsaativeax.mefound.com/",
+      "expected": "phishing",
+      "description": "Suspicious domain"
+    },
+    {
+      "url": "https://www.art.yale.edu",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "http://www.securitycamera-at-2022.life",
+      "expected": "phishing",
+      "description": "Suspicious domain"
+    },
+    {
+      "url": "https://www.isuog.org",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.hostmaster.ua",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.bigconstrutora.com.br",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.iain-ternate.ac.id",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "http://www.l3a40b16a45b1120615b5d1cc655d7da4a.ws",
+      "expected": "phishing",
+      "description": "Suspicious domain"
+    },
+    {
+      "url": "https://www.colorii.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "http://www.pwuxmeudaj.cf",
+      "expected": "phishing",
+      "description": "Suspicious domain"
+    },
+    {
+      "url": "https://www.elcalifa.com.mx",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.art-it.asia",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "http://forcedie17.temp.swtest.ru/postounatou/postounatou/post/login/login.php",
+      "expected": "phishing",
+      "description": "Suspicious domain"
+    },
+    {
+      "url": "https://www.apptha.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.zomoplus.store",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.drskinhealth.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "http://www.sebastians.cf",
+      "expected": "phishing",
+      "description": "Suspicious domain"
+    },
+    {
+      "url": "https://www.lovebeehive.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://acesseonline-fevereiro.net/luiza/?userid=&uri=atzkkwfy5s23fyuju9p+tmvfudyjnultmi2mrlcv9tg=",
+      "expected": "phishing",
+      "description": "Suspicious domain"
+    },
+    {
+      "url": "https://www.cieletespace.fr",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.nataschavonhirschhausen.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.borizcustomsportsjerseys.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.virtualcohen.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.smujo.id",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "http://otwtmbrotq.duckdns.org",
+      "expected": "phishing",
+      "description": "Suspicious domain"
+    },
+    {
+      "url": "https://www.ecseonline.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.kerstopkeukenhof.nl",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.wp-amazon-plugin.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.acc.co.nz",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.noticiasdealava.eus",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.enerjoy.life",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.qatargenome.org.qa",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.idigbio.org",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.energy-community.org",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.tcdsu.org",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.biomagazin.de",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://att-104569.weeblysite.com/",
+      "expected": "phishing",
+      "description": "Suspicious domain"
+    },
+    {
+      "url": "https://www.interislander.co.nz",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.reflectionofsanity.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.fernandoalonso.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.acsa-arch.org",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.southlandcasino.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.7marvels.co.uk",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.secrethitler.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://perte-dimension.web.app/",
+      "expected": "phishing",
+      "description": "Suspicious domain"
+    },
+    {
+      "url": "https://www.groupfacilitation.net",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.kiteman.co.uk",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.libertarian.ca",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.gumtree.com.au",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "http://www.gmarket.system-ns.org",
+      "expected": "phishing",
+      "description": "Suspicious domain"
+    },
+    {
+      "url": "https://www.ichijinsha.co.jp",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.ags.school.nz",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.mapsalud.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.rakennuslehti.fi",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.psd-dude.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.ihub-tansa.jaxa.jp",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.shoppersshop.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.extensionmethod.net",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.ireallytrade.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.broesels-buecherregal.de",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.ijesc.org",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.grundeinkommen.ch",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://btopenworldwebmailing.square.site/",
+      "expected": "phishing",
+      "description": "Suspicious domain"
+    },
+    {
+      "url": "https://visualize-detalhes-online.com/luiza/?userid=13&amp;uri=xudbvbjytdk",
+      "expected": "phishing",
+      "description": "Suspicious domain"
+    },
+    {
+      "url": "https://www.rusticity.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.esurranty.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.hallekis.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "http://www.fgurb.cannca.shop",
+      "expected": "phishing",
+      "description": "Suspicious domain"
+    },
+    {
+      "url": "https://www.observatoryoc.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.creamwine.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://pptform.state.gov",
+      "expected": "safe",
+      "description": "Legitimate passport services"
+    },
+    {
+      "url": "https://www.iaa.csic.es",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "http://www.ftp.products.almostmy.com",
+      "expected": "phishing",
+      "description": "Suspicious domain (HTTP, unusual subdomain)"
+    },
+    {
+      "url": "https://www.thecoastaloak.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "http://compralofacil.net/wp-includes/1",
+      "expected": "phishing",
+      "description": "Suspicious URL (potential scam)"
+    },
+    {
+      "url": "https://www.bnd.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://e-bisasuspendido.vidalortiz83.repl.co/",
+      "expected": "phishing",
+      "description": "Suspicious Replit-hosted domain (potential scam)"
+    },
+    {
+      "url": "https://www.hackensack.org",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "http://www.amazcecm-co-jp.amazaeon.chadengji.top/",
+      "expected": "phishing",
+      "description": "Suspicious domain (impersonation attempt)"
+    },
+    {
+      "url": "https://www.makerbot.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.dulum.vic.edu.au",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://it-web-info.preview-domain.com/home/",
+      "expected": "phishing",
+      "description": "Suspicious preview domain (potential scam)"
+    },
+    {
+      "url": "https://rashfatnet.com/bcwebonlin/?fbclid=iwar357ldpi9o6ysqognh1aojc-f26m_ttowueqbz2c9j1rvzvgsj-of4xjea",
+      "expected": "phishing",
+      "description": "Suspicious URL (random parameters, potential scam)"
+    },
+    {
+      "url": "https://www.madonnainn.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.metrorio.com.br",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.clickssl.net",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "http://www.gkt6yy0s7c7t.top",
+      "expected": "phishing",
+      "description": "Suspicious domain (random string, unusual TLD)"
+    },
+    {
+      "url": "https://www.gofastdontdie.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.firefox.com.cn",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "http://www.sda254wa.cf",
+      "expected": "phishing",
+      "description": "Suspicious domain (free TLD)"
+    },
+    {
+      "url": "https://www.mcsonj.org",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.bigfrenchies.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "http://www.wasatchcrossfit.com",
+      "expected": "phishing",
+      "description": "Suspicious domain (HTTP, potential scam)"
+    },
+    {
+      "url": "http://www.bizztream.com",
+      "expected": "phishing",
+      "description": "Suspicious domain (HTTP, potential scam)"
+    },
+    {
+      "url": "http://www.barotechf.ml",
+      "expected": "phishing",
+      "description": "Suspicious domain (free TLD)"
+    },
+    {
+      "url": "https://www.leafingthroughtime.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.salestrail.io",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.mappit.net",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://bt-107867.weeblysite.com/",
+      "expected": "phishing",
+      "description": "Suspicious Weebly site (impersonation)"
+    },
+    {
+      "url": "https://www.crosscountrywireless.net",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "http://www.sellingconnection.org",
+      "expected": "phishing",
+      "description": "Suspicious domain (HTTP, potential scam)"
+    },
+    {
+      "url": "https://www.sydneyartsguide.com.au/wp-content/jan/index.php",
+      "expected": "phishing",
+      "description": "Suspicious URL (potential scam)"
+    },
+    {
+      "url": "https://www.apnacomplex.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "http://www.gatehub.club",
+      "expected": "phishing",
+      "description": "Suspicious domain (free TLD)"
+    },
+    {
+      "url": "http://www.accounts-web-mail.com",
+      "expected": "phishing",
+      "description": "Suspicious domain (impersonation attempt)"
+    },
+    {
+      "url": "http://www.hkrevolution.club",
+      "expected": "phishing",
+      "description": "Suspicious domain (free TLD)"
+    },
+    {
+      "url": "https://9f5973c5-deb7-42ec-9162-78b23167d8e5.usrfiles.com/html/0e472f_4d9b2a88f72eb4191a8eb158b004ca1f.html",
+      "expected": "phishing",
+      "description": "Suspicious hosted page (potential scam)"
+    },
+    {
+      "url": "https://sb1-g2.web.app/",
+      "expected": "phishing",
+      "description": "Suspicious web app (potential phishing)"
+    },
+    {
+      "url": "https://www.demigiant.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.fordaq.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "http://www.werenot3.xyz",
+      "expected": "phishing",
+      "description": "Suspicious domain (free TLD)"
+    },
+    {
+      "url": "https://www.talgo.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.crunchywood.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.dutchdakota.nl",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.rmcf.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://policy-violation-75895.netlify.app/mappeal",
+      "expected": "phishing",
+      "description": "Suspicious Netlify-hosted page (potential scam)"
+    },
+    {
+      "url": "https://sbi-kppp.web.app/",
+      "expected": "phishing",
+      "description": "Suspicious web app (potential phishing)"
+    },
+    {
+      "url": "https://www.combustioninstitute.org",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.millcreekent.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "http://www.cursosaprovados.com",
+      "expected": "phishing",
+      "description": "Suspicious domain (HTTP, potential scam)"
+    },
+    {
+      "url": "https://www.leopardstown.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "http://www.da-industrial.com",
+      "expected": "phishing",
+      "description": "Suspicious domain (HTTP, potential scam)"
+    },
+    {
+      "url": "https://www.prvaliga.rs",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.macromodelbase.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "http://www.xp171.com",
+      "expected": "phishing",
+      "description": "Suspicious domain (HTTP, potential scam)"
+    },
+    {
+      "url": "http://www.idbmarket.com",
+      "expected": "phishing",
+      "description": "Suspicious domain (HTTP, potential scam)"
+    },
+    {
+      "url": "https://glitter-neon-tuna.glitch.me/irveri.html",
+      "expected": "phishing",
+      "description": "Suspicious Glitch-hosted page (potential scam)"
+    },
+    {
+      "url": "https://mail-106710.square.site/",
+      "expected": "phishing",
+      "description": "Suspicious Square-hosted page (potential scam)"
+    },
+    {
+      "url": "https://magazine-site-oficial-09-03-2023.myshopify.com/",
+      "expected": "phishing",
+      "description": "Suspicious Shopify-hosted domain (potential scam)"
+    },
+    {
+      "url": "https://www.asub.edu",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.wolfmanjack.org",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.bakerfurniture.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.agora-energiewende.de",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://aruba.serveice-mein-auth.com/x1hpkawixkgy7ewh7zlregfu3ozcqwnxfu8sjl96jszc0mxxw3io4n4p/",
+      "expected": "phishing",
+      "description": "Suspicious domain (potential scam)"
+    },
+    {
+      "url": "https://www.shopmagpi.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://movgov-vn.weeblysite.com/",
+      "expected": "phishing",
+      "description": "Suspicious Weebly site (potential scam)"
+    },
+    {
+      "url": "http://www.sana-eblaghiran.cf",
+      "expected": "phishing",
+      "description": "Suspicious domain (free TLD)"
+    },
+    {
+      "url": "http://www.janiking.xyz",
+      "expected": "phishing",
+      "description": "Suspicious domain (free TLD)"
+    },
+    {
+      "url": "https://www.bluebillywig.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "http://www.cyber-peace.org",
+      "expected": "phishing",
+      "description": "Suspicious domain (HTTP, potential scam)"
+    },
+    {
+      "url": "https://www.stratstone.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.dafyomi.co.il",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.telecombladi.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://0379a7b5--0f5d--4fd7--8737--68bf7068c0a4-id-repl-co.translate.goog/am/jnasfb/pzqy?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=en-us&_x_tr_pto=wapp",
+      "expected": "phishing",
+      "description": "Suspicious translated domain (potential scam)"
+    },
+    {
+      "url": "http://www.sighlonthcsttg.ml",
+      "expected": "phishing",
+      "description": "Suspicious domain (free TLD)"
+    },
+    {
+      "url": "https://www.glcopenday.com.my",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "http://www.x078536a53de817979a82a086cf239abe0.ws",
+      "expected": "phishing",
+      "description": "Suspicious domain (random string, unusual TLD)"
+    },
+    {
+      "url": "http://www.msf-supernova.net78.net",
+      "expected": "phishing",
+      "description": "Suspicious domain (free hosting)"
+    },
+    {
+      "url": "http://www.zasdfer.ga",
+      "expected": "phishing",
+      "description": "Suspicious domain (free TLD)"
+    },
+    {
+      "url": "https://www.mercurytheaterchicago.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.futurepia.io",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.greenstreamapps.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://n4acc.blogspot.com/?m=1",
+      "expected": "phishing",
+      "description": "Suspicious Blogspot page (potential scam)"
+    },
+    {
+      "url": "https://www.tommykeene.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://audio-logs.us-east-1.linodeobjects.com/audio-authentications.html",
+      "expected": "phishing",
+      "description": "Suspicious Linode-hosted page (potential scam)"
+    },
+    {
+      "url": "https://servidor-detalhado-24k.com/?gclid=eaiaiqobchmi8ze4lik5_qivixktbh37waiaeaayasaaegj73pd_bwe",
+      "expected": "phishing",
+      "description": "Suspicious URL (random parameters, potential scam)"
+    },
+    {
+      "url": "https://fechavencimientobisacuentavencida--pasosaseguir.repl.co/",
+      "expected": "phishing",
+      "description": "Suspicious Replit-hosted domain (potential scam)"
+    },
+    {
+      "url": "https://www.atsjournals.org",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.designfreedominc.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.onephotographaday.org.uk",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.artic.edu",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "http://www.news.trungtamwtoa.com",
+      "expected": "phishing",
+      "description": "Suspicious domain (HTTP, potential scam)"
+    },
+    {
+      "url": "https://www.cafelotus.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.customgrocerybags.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.worryaboutitlater.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.gallup.unm.edu",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.eltallerdelascosasbonitas.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "http://www.gilmoregirlspodcast.com",
+      "expected": "phishing",
+      "description": "Suspicious domain (HTTP, potential scam)"
+    },
+    {
+      "url": "https://www.jacobquatier.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.itancan.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://dutsh-helppackage.ecranul.ro/public/ggm1pi3rci8rrsu8ujrw7sscpnvjdzav",
+      "expected": "phishing",
+      "description": "Suspicious URL (potential scam)"
+    },
+    {
+      "url": "https://www.eghtesadonline.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "http://www.halcyongroup.com",
+      "expected": "phishing",
+      "description": "Suspicious domain (HTTP, potential scam)"
+    },
+    {
+      "url": "https://www.sosimpleideas.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.gacor-polisislot.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "http://www.peaxs.com",
+      "expected": "phishing",
+      "description": "Suspicious domain (HTTP, potential scam)"
+    },
+    {
+      "url": "https://tinyurl.com/verificabperapp",
+      "expected": "phishing",
+      "description": "Suspicious shortened URL (potential scam)"
+    },
+    {
+      "url": "https://fb-business-appeal-733f8.firebaseapp.com/",
+      "expected": "phishing",
+      "description": "Suspicious Firebase app (potential phishing)"
+    },
+    {
+      "url": "http://www.simple-it.org",
+      "expected": "phishing",
+      "description": "Suspicious domain (HTTP, potential scam)"
+    },
+    {
+      "url": "https://www.robinspost.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "http://www.iscompetition.net",
+      "expected": "phishing",
+      "description": "Suspicious domain (HTTP, potential scam)"
+    },
+    {
+      "url": "https://serifoto.it/",
+      "expected": "phishing",
+      "description": "Suspicious domain (potential scam)"
+    },
+    {
+      "url": "https://clienti-bper-supporto-sistema.cfolks.pl/application/mobile/public/webapp/digital-login/",
+      "expected": "phishing",
+      "description": "Suspicious URL (potential scam)"
+    },
+    {
+      "url": "http://sjfkmdemax.theweddingshow.club/vnafvra97w/?q=3717065149&id=100",
+      "expected": "phishing",
+      "description": "Suspicious domain (free TLD, random subdomain)"
+    },
+    {
+      "url": "https://performance-bonus-f6f89.web.app/",
+      "expected": "phishing",
+      "description": "Suspicious web app (potential phishing)"
+    },
+    {
+      "url": "https://www.ettitude.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.vuelocondestinoa.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.beagleboard.org",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.ctpl.io",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.vlaamsabvv.be",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.it.northwestern.edu",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.abruzzoruralproperty.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://domappcheckomeg20.web.app/",
+      "expected": "phishing",
+      "description": "Suspicious web app (potential phishing)"
+    },
+    {
+      "url": "https://www.demilodesign.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www-info-saison-card.huidanao.com/jp.php",
+      "expected": "phishing",
+      "description": "Suspicious domain (potential scam)"
+    },
+    {
+      "url": "https://www.jewishtimes.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "http://www.xxacpreh.ru",
+      "expected": "phishing",
+      "description": "Suspicious domain (.ru, potential scam)"
+    },
+    {
+      "url": "http://www.pickleballhotspot.com",
+      "expected": "phishing",
+      "description": "Suspicious domain (HTTP, potential scam)"
+    },
+    {
+      "url": "https://www.tommymoloneys.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.whatsarahwrites.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://fb-business-appeal-25766.firebaseapp.com/",
+      "expected": "phishing",
+      "description": "Suspicious Firebase app (potential phishing)"
+    },
+    {
+      "url": "http://www.1rd3im7z7o0zyhrdjlhsu0wej.net",
+      "expected": "phishing",
+      "description": "Suspicious domain (random string, potential scam)"
+    },
+    {
+      "url": "https://www.turkishfoodandrecipes.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "http://www.jeannew.ga",
+      "expected": "phishing",
+      "description": "Suspicious domain (free TLD)"
+    },
+    {
+      "url": "https://www.task39.org",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "http://www.peygiri-sak.ml",
+      "expected": "phishing",
+      "description": "Suspicious domain (free TLD)"
+    },
+    {
+      "url": "https://qc1x1e.webwave.dev/",
+      "expected": "phishing",
+      "description": "Suspicious web app (potential phishing)"
+    },
+    {
+      "url": "https://paypal-support.com.desenvolvedortheosbank.com.br/login.php?cmd=_account-details&amp;session=259251b41082fa71832907d32d30acb5&amp;dispatch=953222e620edc7fd1a2c31f946d9e15cb64c9fdd",
+      "expected": "phishing",
+      "description": "Suspicious URL (impersonating PayPal)"
+    },
+    {
+      "url": "https://www.climate-policy-watcher.org",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.coloradosprings.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.hifly96975.top/",
+      "expected": "phishing",
+      "description": "Suspicious domain (unusual TLD)"
+    },
+    {
+      "url": "https://noragrcaissrgnalinfo-fr.web.app/",
+      "expected": "phishing",
+      "description": "Suspicious web app (potential phishing)"
+    },
+    {
+      "url": "https://www.assembly.pe.ca",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.markstruzinski.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "http://www.led-e.com",
+      "expected": "phishing",
+      "description": "Suspicious domain (HTTP, potential scam)"
+    },
+    {
+      "url": "http://www.0577yx.com",
+      "expected": "phishing",
+      "description": "Suspicious domain (HTTP, potential scam)"
+    },
+    {
+      "url": "https://fgfd-a4859.firebaseapp.com/",
+      "expected": "phishing",
+      "description": "Suspicious Firebase app (potential phishing)"
+    },
+    {
+      "url": "http://technicalseoguruji.com/wp-admin/swiss.php",
+      "expected": "phishing",
+      "description": "Suspicious URL (potential scam)"
+    },
+    {
+      "url": "http://www.dergr45.top",
+      "expected": "phishing",
+      "description": "Suspicious domain (free TLD)"
+    },
+    {
+      "url": "https://www.eastonmd.gov",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    },
+    {
+      "url": "https://www.yawnstudio.com",
+      "expected": "safe",
+      "description": "Legitimate domain"
+    }
+  ]
+}
